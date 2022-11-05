@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "first-flask-api-server"
+version = "0.1.0"
+description = ""
+authors = ["Junki Hori <junki326+github@gmail.com>"]
+readme = "README.md"
+packages = [{include = "first_flask_api_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+gunicorn = "^20.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
